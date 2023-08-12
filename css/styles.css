@@ -12,6 +12,7 @@
   --dark-bg: #2e2f42;
   --primary-white: #ffffff;
   --border-color: #e7e9fc;
+  --lightslate: #8e8f99;
 }
 
 /**
@@ -141,11 +142,24 @@ nav {
   color: var(--active-color);
 }
 
+/* .nav-list-link::after {
+  content: '';
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--ocean, #404bbf);
+  position: absolute; */
+/* } */
+
 .nav-list {
   display: flex;
   gap: 40px;
   margin-right: auto;
 }
+
+/* .nav-list-item {
+  position: relative;
+} */
 .contact-list-link {
   color: var(--text-color);
   font-weight: 400;
@@ -170,8 +184,17 @@ nav {
 /* hero-section */
 
 .hero-section {
-  background-color: var(--dark-bg);
   padding: 188px 0px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: var(--dark-bg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
@@ -209,6 +232,12 @@ nav {
 }
 
 /* advantages-section */
+.advantages-list-wrapper {
+  background-color: var(--light-bg);
+  border-radius: 4px;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+}
 
 .advantages-title {
   color: var(--title-color);
@@ -313,6 +342,7 @@ nav {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-list-img {
@@ -320,6 +350,64 @@ nav {
 
 .team-card {
   padding: 32px 0px;
+}
+
+.team-socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.team-socials-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-interactive-color);
+}
+
+.team-social-list-icon {
+  fill: var(--light-bg);
+}
+
+/**
+  |============================
+  | CUSTOMERS SECTION
+  |============================
+*/
+
+.customers-title {
+  color: var(--dark-bg);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-list-item {
+  width: 168px;
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid var(--lightslate);
+}
+
+.customers-list-icon {
+  fill: var(--lightslate);
 }
 
 /* footer */
@@ -346,6 +434,15 @@ nav {
 }
 
 .footer-container {
+}
+
+.social-media-desc {
+  color: var(--primary-white);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
 }
 
 /**
