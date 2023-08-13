@@ -179,6 +179,7 @@ nav {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-list-link:hover,
@@ -536,6 +537,10 @@ nav {
   border-radius: 4px;
   padding: 12px 24px;
   border: 1px solid var(--border-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filtr-button:hover,
@@ -543,8 +548,20 @@ nav {
   color: var(--primary-white);
   background-color: var(--active-color);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.products-list-link {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.products-list-link:hover,
+.products-list-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .products-list-title {
   color: var(--dark-bg);
   font-size: 20px;
@@ -591,11 +608,7 @@ nav {
   padding-left: 32px;
   padding-bottom: 164px;
   transform: translateY(100%);
-}
-
-.overlay-text {
   color: var(--light-bg);
-  font-family: Roboto;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
