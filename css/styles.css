@@ -604,7 +604,6 @@ nav {
   height: 100%;
   background-color: var(--primary-interactive-color);
   padding: 40px 32px;
-  padding-bottom: 164px;
   transform: translateY(100%);
   color: var(--light-bg);
   line-height: 1.5;
